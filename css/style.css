@@ -1,0 +1,210 @@
+/*CSS Reset*/
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+/*Style for Navigation*/
+#nav-cont {
+    display:flex;
+    align-items: center;
+    position: relative;
+}
+#nav-cont::before {
+    content:"";
+    position: absolute;
+    background-color: black;
+    opacity: 0.35;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+#nav-cont .logo {
+    margin: 10px 20px;
+}
+#nav-cont .logo img {
+    height:90px;
+    padding:5px 10px;
+    filter: invert(100%);
+}
+#nav-cont ul {
+    display: flex;
+}
+#nav-cont ul li {
+    list-style-type: none;
+}
+#nav-cont ul li a {
+    text-decoration: none;
+    padding: 5px 20px;
+    color: white;
+    font-size:1.1rem;
+}
+#nav-cont ul li a:hover {
+    background-color: whitesmoke;
+    color:rgb(0, 0, 0);
+    border-radius: 10px;
+}
+/* Style for Main section*/
+#main-sec {
+   height:630px;
+   padding: 10px 180px;
+}
+#main-sec .cont {
+    width:85%;
+    margin: 95px auto 0px auto;
+    text-align: center;
+}
+#main-sec .cont #submit {
+    padding:5px 30px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    background-color: mediumseagreen;
+    font-family: 'Baloo Bhai 2', cursive;
+    border: none;
+    outline: none;
+    color:white;
+}
+#main-sec .cont #submit:hover {
+    background-color: green;
+    cursor: pointer;
+}
+#main-sec::before {
+    content: "";
+    background: url("../img/bg.jpg") no-repeat center center/cover;
+    width:100%;
+    height:755px;
+    position: absolute;
+    z-index: -1;
+    top:0;
+    left:0;
+    opacity: 0.85;
+}
+/*Utility class*/
+.heading {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}
+.para {
+    font-size:1.4rem;
+    color: mintcream;
+}
+#services h1,#contacts h1,#form-section h1 {
+    text-align: center;
+    font-size:3rem;
+}
+#form-section h1 {
+    color:white;
+}
+
+/*service section*/
+#services {
+    display:flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    height: auto;
+    margin-bottom: -40px;
+}
+#services .service-cont {
+    display: flex;
+    margin: 17px 17px;
+}
+#services .service-cont .box {
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px 20px;
+    padding: 5px 40px;
+    background-color: white;
+}
+#services .service-cont .box img {
+    height:120px;
+    display: block;
+    margin:auto;
+}
+/*social network section */ 
+#contacts {
+height: 331px;
+position: relative;
+}
+#contacts::before {
+    content: "";
+    position: absolute;
+    height:112%;
+    width:100%;
+    background:url("../img/bg1.jpg") no-repeat center center/cover;
+    opacity: 0.6;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+#contacts #cont-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#contacts #cont-boxes .cont-box img {
+    height:100px;
+}
+/*Form section*/
+#form-section {
+    height:600px;
+    position: relative;
+}
+#form-section::before {
+    content: "";
+    position: absolute;
+    height:100%;
+    width:100%;
+    background:url("../img/bg3.jpg") no-repeat center center/cover;
+    opacity: 0.6;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+form {
+   width:50%;
+   margin: auto;
+   background-color: rgb(0, 0, 0);
+   padding:20px 20px 40px 20px;
+   border-radius: 10px;
+}
+ form .row{
+    display: flex;
+    opacity: none;
+}
+.col-1 {
+    flex: 30%;
+    margin-top:5px;
+    color:white;
+}
+.col-2 {
+    flex:70%;
+}
+#name,#email,#number,#text {
+    width:100%;
+    padding:10px;
+    margin:5px;
+    border-radius: 5px;
+    border:none;
+    outline:none;
+}
+input[type="submit"] {
+    float: right;
+    padding: 5px 20px;
+    color: white;
+    background-color: mediumseagreen;
+    border-radius:5px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+}
+input[type="submit"]:hover {
+    background-color:green;
+}
+

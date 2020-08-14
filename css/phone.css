@@ -1,0 +1,76 @@
+/*Response for Phone*/
+    #nav-cont {
+        flex-direction: column;
+    }
+    #nav-cont .nav-ber ul {
+        flex-direction: column;
+    }
+    #nav-cont ul {
+        flex-direction: column;
+    }
+    #nav-cont .nav-ber ul li a {
+        display: block;
+        text-align: center;
+    }
+    #main-sec {
+        height: 600px;
+        padding: 10px 30px;
+    }
+    #main-sec .cont {
+        width: 80%;
+        margin: 85px auto 0px auto;
+    }
+    #main-sec::before {
+        height: 900px;
+    }
+    #contacts {
+        height: 280px;
+    }
+    #contacts::before {
+        height:302px;
+    }
+    #contacts #cont-boxes .cont-box img {
+        height: 80px;
+    }
+    #services {
+        height:auto;
+    }
+    #services .service-cont  {
+        flex-direction: column;
+    }
+    #services .service-cont .box { 
+        margin: 5px 10px;
+        padding: 5px 20px;
+    }
+    form .row {
+        flex-direction: column;
+    }
+    .col-1 {
+        margin:0;
+    }
+    #name,#email,#number,#text {
+        margin: 0;
+    }
+    form {
+        width:80%;
+     }
+     input[type="submit"] {
+         width:100%;
+     }
+     #services h1,#contacts h1,#form-section h1 {
+        font-size:1.7rem;
+    }
+    #contacts h1 {
+        padding: 25px 10px;
+    }
+    .heading {
+        font-size: 1.8rem;
+    }
+    .para {
+        font-size:1.1rem;
+        color: mintcream;
+    }
+    #main-sec .cont #submit {
+        padding: 3px 30px;
+        font-size: 1.2rem;
+    }
